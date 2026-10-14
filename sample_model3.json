@@ -1,0 +1,68 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "Character.moc3",
+    "Textures": [
+      "Character.2048/texture_00.png"
+    ],
+    "Physics": "Character.physics3.json",
+    "DisplayInfo": "Character.cdi3.json",
+    "Expressions": [
+      {
+        "Name": "Neutral",
+        "File": "expressions/neutral.exp3.json"
+      },
+      {
+        "Name": "Happy",
+        "File": "expressions/happy.exp3.json"
+      },
+      {
+        "Name": "Sad",
+        "File": "expressions/sad.exp3.json"
+      }
+    ],
+    "Motions": {
+      "Idle": [
+        {
+          "File": "motions/idle.motion3.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        }
+      ],
+      "TapBody": [
+        {
+          "File": "motions/tap_body.motion3.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+      ]
+    }
+  ],
+  "HitAreas": [
+    {
+      "Name": "Head",
+      "Id": "HitAreaHead"
+    },
+    {
+      "Name": "Body",
+      "Id": "HitAreaBody"
+    }
+  ]
+}
